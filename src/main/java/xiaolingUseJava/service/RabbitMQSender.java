@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Value;
 public class RabbitMQSender {
     @Autowired
     private AmqpTemplate rabbitTemplate;
-    @Value("{xiaolingUseJava.rabbitmq.exchange}")
+    @Value("${xiaolingUseJava.rabbitmq.exchange}")
     private String exchange;
-    @Value("{xiaolingUseJava.rabbitmq.routingKey}")
+    @Value("${xiaolingUseJava.rabbitmq.routingkey}")
     private String routingKey;
 
     public void send(Employee employee){

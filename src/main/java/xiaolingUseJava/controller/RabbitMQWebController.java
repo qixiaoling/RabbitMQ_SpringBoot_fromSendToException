@@ -12,12 +12,9 @@ import xiaolingUseJava.service.RabbitMQSender;
 @RequestMapping(value = "/xiaolingUseJava-rabbitmq/")
 public class RabbitMQWebController {
 
-    private RabbitMQSender rabbitMQSender;
 
     @Autowired
-   public RabbitMQWebController(RabbitMQSender rabbitMQSender){
-       this.rabbitMQSender = rabbitMQSender;
-   }
+    RabbitMQSender rabbitMQSender;
 
    @GetMapping(value = "/producer")
     public String producer(@RequestParam("empName") String empName, @RequestParam("empId") String empId){

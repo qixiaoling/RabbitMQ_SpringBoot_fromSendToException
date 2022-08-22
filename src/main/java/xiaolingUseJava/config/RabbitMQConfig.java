@@ -17,11 +17,11 @@ import xiaolingUseJava.service.RabbitMQSender;
 @Configuration
 public class RabbitMQConfig {
 
-    @Value("{xiaolingUseJava.rabbitmq.queue}")
+    @Value("${xiaolingUseJava.rabbitmq.queue}")
     String queueName;
-    @Value("{xiaolingUseJava.rabbitmq.exchange}")
+    @Value("${xiaolingUseJava.rabbitmq.exchange}")
     String exchange;
-    @Value("{xiaolingUseJava.rabbitmq.routingKey}")
+    @Value("${xiaolingUseJava.rabbitmq.routingkey}")
     private String routingKey;
 
     @Bean
