@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e39d7a0-667a-4b62-8e48-98b5d13a55ec" name="Changes" comment="worked">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQDirectConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/controller/RabbitMQWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/controller/RabbitMQDirectWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/model/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/service/RabbitMQSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQDirectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQTopicConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/controller/RabbitMQDirectWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/controller/RabbitMQTopicWebController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "09f8318bf449df200ecb67afb880cde7"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;09f8318bf449df200ecb67afb880cde7&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="XiaolingUseJavaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="RabbitMQ_Spring_Boot_JavaInUse" />
