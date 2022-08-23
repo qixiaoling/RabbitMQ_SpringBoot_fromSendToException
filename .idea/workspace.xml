@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e39d7a0-667a-4b62-8e48-98b5d13a55ec" name="Changes" comment="different exchange, queue and binding">
+    <list default="true" id="4e39d7a0-667a-4b62-8e48-98b5d13a55ec" name="Changes" comment="worked">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQDirectConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/service/RabbitMQSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/service/RabbitMQSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/controller/RabbitMQWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/controller/RabbitMQDirectWebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/service/RabbitMQSender.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="ExceptionHandeling_DeadLetterQueue" />
       </map>
     </option>
   </component>
@@ -81,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661154398222</updated>
       <workItem from="1661154399832" duration="12553000" />
-      <workItem from="1661239513734" duration="5497000" />
+      <workItem from="1661239513734" duration="8946000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1661169097695</created>
@@ -104,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661244016475</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="worked">
+      <created>1661247366218</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661247366218</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +135,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="different exchange, queue and binding" />
-    <option name="LAST_COMMIT_MESSAGE" value="different exchange, queue and binding" />
+    <MESSAGE value="worked" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked" />
   </component>
 </project>
