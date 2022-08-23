@@ -17,27 +17,36 @@ import xiaolingUseJava.service.RabbitMQSender;
 @Configuration
 public class RabbitMQConfig {
 
-    @Value("${xiaolingUseJava.rabbitmq.queue}")
-    String queueName;
-    @Value("${xiaolingUseJava.rabbitmq.exchange}")
-    String exchange;
-    @Value("${xiaolingUseJava.rabbitmq.routingkey}")
-    private String routingKey;
+    //this is different from the master because it needs different exhcnage name and routing key for both deadLetterqueue and normal queue,
+    //therefore we dont use property to define the queue name and exchange name and routing key, but we hard code for each queue and exchange and binding.
+    @Bean
+    DirectExchange deadLetterExchange() {
+        return new DirectExchange("deadLetterExchange");
+    }
+    @Bean
+    DirectExchange normalExchange(){
+        return new DirectExchange("xiaolingUseJavaExchange");
+    }
+
+    Queue deadLetterQueue(){
+        return QueueBuilder.durable("deadLetter.queue").build();
+    }
+    @Bean
+    Queue normalQueue(){
+        return QueueBuilder.durable("xiaolingUseJava.queue").withArgument("x-dead-letter-exchange", "deadLetterExchange")
+                .withArgument("x-dead-letter-routing-key", "deadLetter").build();
+    }
+
 
     @Bean
-    Queue queue(){
-        return new Queue(queueName, false);
+    Binding DLQbinding() {
+        return BindingBuilder.bind(deadLetterQueue()).to(deadLetterExchange()).with("deadLetter");
     }
-
-   @Bean
-    DirectExchange exchange(){
-        return new DirectExchange(exchange);
-    }
-
     @Bean
-    Binding binding(Queue queue, DirectExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with(routingKey);
+    Binding normalBinding(){
+        return BindingBuilder.bind(normalQueue()).to(normalExchange()).with("xiaolingUseJava");
     }
+
 
 
     @Bean

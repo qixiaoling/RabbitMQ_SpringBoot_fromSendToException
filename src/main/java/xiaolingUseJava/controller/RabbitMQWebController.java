@@ -17,12 +17,13 @@ public class RabbitMQWebController {
     RabbitMQSender rabbitMQSender;
 
    @GetMapping(value = "/producer")
-    public String producer(@RequestParam("empName") String empName, @RequestParam("empId") String empId){
+    public String producer(@RequestParam("empName") String empName, @RequestParam("empId") String empId, @RequestParam("salary") int salary){
         Employee emp = new Employee();
         emp.setEmpId(empId);
         emp.setEmpName(empName);
+        emp.setSalary(salary);
         rabbitMQSender.send(emp);
-        return "Message sent to the RabbitMQ XiaolingUseJava Successfully";
+        return "Message sent to the RabbitMQ Successfully";
     }
 
 
