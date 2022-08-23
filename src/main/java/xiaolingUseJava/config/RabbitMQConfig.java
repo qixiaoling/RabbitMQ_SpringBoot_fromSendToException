@@ -28,12 +28,13 @@ public class RabbitMQConfig {
         return new DirectExchange("xiaolingUseJavaExchange");
     }
 
+    @Bean
     Queue deadLetterQueue(){
         return QueueBuilder.durable("deadLetter.queue").build();
     }
     @Bean
     Queue normalQueue(){
-        return QueueBuilder.durable("xiaolingUseJava.queue").withArgument("x-dead-letter-exchange", "deadLetterExchange")
+        return QueueBuilder.durable("normal.queue").withArgument("x-dead-letter-exchange", "deadLetterExchange")
                 .withArgument("x-dead-letter-routing-key", "deadLetter").build();
     }
 
@@ -44,7 +45,7 @@ public class RabbitMQConfig {
     }
     @Bean
     Binding normalBinding(){
-        return BindingBuilder.bind(normalQueue()).to(normalExchange()).with("xiaolingUseJava");
+        return BindingBuilder.bind(normalQueue()).to(normalExchange()).with("normal");
     }
 
 

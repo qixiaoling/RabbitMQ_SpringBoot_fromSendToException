@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e39d7a0-667a-4b62-8e48-98b5d13a55ec" name="Changes" comment="second commit">
+    <list default="true" id="4e39d7a0-667a-4b62-8e48-98b5d13a55ec" name="Changes" comment="different exchange, queue and binding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/controller/RabbitMQWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/controller/RabbitMQWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/model/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/service/RabbitMQSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaolingUseJava/service/RabbitMQSender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661154398222</updated>
       <workItem from="1661154399832" duration="12553000" />
-      <workItem from="1661239513734" duration="2953000" />
+      <workItem from="1661239513734" duration="5497000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1661169097695</created>
@@ -99,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661191870713</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="different exchange, queue and binding">
+      <created>1661244016475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661244016475</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="different exchange, queue and binding" />
+    <option name="LAST_COMMIT_MESSAGE" value="different exchange, queue and binding" />
   </component>
 </project>
